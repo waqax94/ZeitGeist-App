@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_feedback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.zeitgeist.employee.Activities.FeedbackActivity"
+    tools:showIn="@layout/activity_feedback">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/customer_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="40dp"
+                    android:layout_margin="30dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/field_name"
+                    android:text="For Customer Use!"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/feedback_form"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/customer_heading"
+                android:layout_centerHorizontal="true">
+
+                <RelativeLayout
+                    android:id="@+id/question_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/question_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:textSize="25dp"
+                        android:textColor="@color/field_name"
+                        android:gravity="center"
+                        android:text="Measurement Giving Experience"/>
+
+                    <TextView
+                        android:id="@+id/question_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:textSize="25dp"
+                        android:textColor="@color/field_name"
+                        android:text="Quality of Sales Staff"
+                        android:layout_below="@id/question_1"/>
+
+                    <TextView
+                        android:id="@+id/question_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:textSize="25dp"
+                        android:textColor="@color/field_name"
+                        android:text="Fabric Options"
+                        android:layout_below="@id/question_2"/>
+
+                    <TextView
+                        android:id="@+id/question_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:textSize="25dp"
+                        android:textColor="@color/field_name"
+                        android:text="Customizable Options"
+                        android:layout_below="@id/question_3"/>
+
+                    <TextView
+                        android:id="@+id/question_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:textSize="25dp"
+                        android:textColor="@color/field_name"
+                        android:text="Speed of Delivery"
+                        android:layout_below="@id/question_4"/>
+
+                    <TextView
+                        android:id="@+id/question_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:textSize="25dp"
+                        android:textColor="@color/field_name"
+                        android:text="Quality of Stitching"
+                        android:layout_below="@id/question_5"/>
+
+                    <TextView
+                        android:id="@+id/question_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:textSize="25dp"
+                        android:textColor="@color/field_name"
+                        android:text="Quality of Fitting"
+                        android:layout_below="@id/question_6"/>
+
+                    <TextView
+                        android:id="@+id/question_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:textSize="25dp"
+                        android:textColor="@color/field_name"
+                        android:text="Overall Quality of Final Product"
+                        android:layout_below="@id/question_7"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/question_layout"
+                    android:layout_marginLeft="30dp">
+
+                    <RadioGroup
+                        android:id="@+id/answere_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/excellent_ans_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Excellent"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                        <RadioButton
+                            android:id="@+id/good_ans_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Good"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                        <RadioButton
+                            android:id="@+id/average_ans_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Average"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                        <RadioButton
+                            android:id="@+id/poor_ans_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Poor"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/answere_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:layout_below="@id/answere_1"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/excellent_ans_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Excellent"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                        <RadioButton
+                            android:id="@+id/good_ans_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Good"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                        <RadioButton
+                            android:id="@+id/average_ans_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Average"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                        <RadioButton
+                            android:id="@+id/poor_ans_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Poor"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/answere_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:layout_below="@id/answere_2"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/excellent_ans_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Excellent"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                        <RadioButton
+                            android:id="@+id/good_ans_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Good"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                        <RadioButton
+                            android:id="@+id/average_ans_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Average"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                        <RadioButton
+                            android:id="@+id/poor_ans_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Poor"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/answere_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:layout_below="@id/answere_3"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/excellent_ans_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Excellent"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                        <RadioButton
+                            android:id="@+id/good_ans_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Good"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                        <RadioButton
+                            android:id="@+id/average_ans_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Average"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                        <RadioButton
+                            android:id="@+id/poor_ans_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Poor"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/answere_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:layout_below="@id/answere_4"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/excellent_ans_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Excellent"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                        <RadioButton
+                            android:id="@+id/good_ans_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Good"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                        <RadioButton
+                            android:id="@+id/average_ans_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Average"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                        <RadioButton
+                            android:id="@+id/poor_ans_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Poor"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/answere_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:layout_below="@id/answere_5"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/excellent_ans_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Excellent"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                        <RadioButton
+                            android:id="@+id/good_ans_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Good"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                        <RadioButton
+                            android:id="@+id/average_ans_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Average"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                        <RadioButton
+                            android:id="@+id/poor_ans_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Poor"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/answere_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:layout_below="@id/answere_6"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/excellent_ans_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Excellent"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                        <RadioButton
+                            android:id="@+id/good_ans_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Good"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                        <RadioButton
+                            android:id="@+id/average_ans_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Average"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                        <RadioButton
+                            android:id="@+id/poor_ans_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Poor"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/answere_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:layout_below="@id/answere_7"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/excellent_ans_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Excellent"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                        <RadioButton
+                            android:id="@+id/good_ans_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Good"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                        <RadioButton
+                            android:id="@+id/average_ans_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Average"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                        <RadioButton
+                            android:id="@+id/poor_ans_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Poor"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/field_name"
+                            android:textSize="25dp"/>
+
+                    </RadioGroup>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/staff_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/feedback_form"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="40dp"
+                    android:layout_margin="30dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/field_name"
+                    android:text="For Staff!"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/info_for_staff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/staff_heading"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/field_bg">
+
+                <TextView
+                    android:id="@+id/customer_name_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Name: "
+                    android:textSize="30dp"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/field_name"/>
+
+                <TextView
+                    android:id="@+id/customer_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="30dp"
+                    android:text="WAQAS WAHEED"
+                    android:textAllCaps="true"
+                    android:layout_margin="20dp"
+                    android:layout_alignBaseline="@id/customer_name_tag"
+                    android:layout_toRightOf="@id/customer_name_tag"
+                    android:textColor="@color/field_name"
+                    android:background="@drawable/m_field_bg"/>
+
+                <TextView
+                    android:id="@+id/customer_id_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer ID: "
+                    android:textSize="30dp"
+                    android:layout_below="@id/customer_name_tag"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/field_name"/>
+
+                <TextView
+                    android:id="@+id/customer_id_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="30dp"
+                    android:text="45"
+                    android:layout_margin="20dp"
+                    android:layout_alignBaseline="@id/customer_id_tag"
+                    android:layout_toRightOf="@id/customer_id_tag"
+                    android:textColor="@color/field_name"
+                    android:background="@drawable/m_field_bg"/>
+
+
+                <TextView
+                    android:id="@+id/order_id_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order ID: "
+                    android:textSize="30dp"
+                    android:layout_below="@id/customer_id_tag"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/field_name"/>
+
+                <TextView
+                    android:id="@+id/order_id_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="30dp"
+                    android:text="Bespoke_62786316"
+                    android:layout_margin="20dp"
+                    android:layout_alignBaseline="@id/order_id_tag"
+                    android:layout_toRightOf="@id/order_id_tag"
+                    android:textColor="@color/field_name"
+                    android:background="@drawable/m_field_bg"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/info_for_staff"
+                android:layout_centerHorizontal="true">
+
+                <Button
+                    android:id="@+id/submit_feedback"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:text="submit"
+                    android:textColor="@color/btn_dark_text"
+                    android:background="@drawable/login_btn_bg"
+                    android:textSize="25dp"
+                    android:layout_margin="30dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

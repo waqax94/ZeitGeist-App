@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ZeitGeist</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_new_order">NewOrderActivity</string>
+    <string name="title_activity_search_customer">SearchCustomerActivity</string>
+    <string name="title_activity_order_taking">OrderTakingActivity</string>
+    <string name="title_activity_order_type">OrderTypeActivity</string>
+    <string name="title_activity_order_list">orderListActivity</string>
+    <string name="title_activity_jhhgfashj">jhhgfashj</string>
+    <string name="title_activity_order_suit_type">OrderSuitTypeActivity</string>
+    <string name="title_activity_place_order">PlaceOrderActivity</string>
+    <string name="title_activity_order_management">OrderManagementActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_search_order">SearchOrderActivity</string>
+    <string name="title_activity_search_result">SearchResultActivity</string>
+    <string name="title_activity_order_display">OrderDisplayActivity</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+    <string name="title_activity_order_taking_two_piece">OrderTakingTwoPiece</string>
+    <string name="title_activity_order_taking_jacket">OrderTakingJacket</string>
+    <string name="title_activity_order_taking_pant">OrderTakingPant</string>
+    <string name="title_activity_order_taking_waist_coat">OrderTakingWaistCoat</string>
+    <string name="title_activity_order_taking_shirt">OrderTakingShirt</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_information">InformationActivity</string>
+
+
+    <string name="version_information">Version 1.0.0</string>
+</resources>

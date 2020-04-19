@@ -1,0 +1,1058 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zeitgeist.employee.Fragments.MeasurementInfoFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/body_description_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="35dp"
+                    android:layout_margin="30dp"
+                    android:text="BODY DESCRIPTION"
+                    android:textColor="@color/colorAccent"/>
+
+                <GridLayout
+                    android:id="@+id/body_description_grids"
+                    android:columnCount="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/body_description_heading">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/stance_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="STANCE"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/stance_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/stance_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/stance_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/stance_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/shoulder_slope_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="SHOULDER SLOPE"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/shoulder_slope_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/shoulder_slope_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/shoulder_slope_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/shoulder_slope_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/chest_description_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="CHEST DESCRIPTION"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/chest_description_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/chest_description_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/chest_description_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/chest_description_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/stomach_description_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="stomach description"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/stomach_description_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/stomach_description_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/stomach_description_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/stomach_description_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/hip_description_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="hip description"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/hip_description_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/hip_description_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/hip_description_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/hip_description_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </GridLayout>
+
+                <TextView
+                    android:id="@+id/measurements_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="35dp"
+                    android:layout_margin="30dp"
+                    android:text="MEASUREMENTS"
+                    android:layout_below="@id/body_description_grids"
+                    android:textColor="@color/colorAccent"/>
+
+
+                <TableLayout
+                    android:id="@+id/measurements_table"
+                    android:layout_width="800dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/measurements_heading"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="20dp">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/neck_row"
+                        android:background="@drawable/table_row_bg">
+
+                        <TextView
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:text="NECK"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/neck_measurement"
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/full_chest_row"
+                        android:background="@drawable/table_row_bg">
+
+                        <TextView
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:text="FULL CHEST"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/full_chest_measurement"
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/full_shoulder_width_row"
+                        android:background="@drawable/table_row_bg">
+
+                        <TextView
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:text="full shoulder width"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/full_shoulder_width_measurement"
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/right_sleeve_row"
+                        android:background="@drawable/table_row_bg">
+
+                        <TextView
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:text="right sleeve"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/right_sleeve_measurement"
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/left_sleeve_row"
+                        android:background="@drawable/table_row_bg">
+
+                        <TextView
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:text="left sleeve"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/left_sleeve_measurement"
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bicep_row"
+                        android:background="@drawable/table_row_bg">
+
+                        <TextView
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:text="bicep"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/bicep_measurement"
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/wrist_row"
+                        android:background="@drawable/table_row_bg">
+
+                        <TextView
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:text="wrist"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/wrist_measurement"
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/waist_stomach_row"
+                        android:background="@drawable/table_row_bg">
+
+                        <TextView
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:text="waist stomach"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/waist_stomach_measurement"
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/hip_row"
+                        android:background="@drawable/table_row_bg">
+
+                        <TextView
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:text="hip"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/hip_measurement"
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/front_jacket_length_row"
+                        android:background="@drawable/table_row_bg">
+
+                        <TextView
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:text="front jacket length"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/front_jacket_length_measurement"
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/front_chest_width_row"
+                        android:background="@drawable/table_row_bg">
+
+                        <TextView
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:text="front chest width"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/front_chest_width_measurement"
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/back_width_row"
+                        android:background="@drawable/table_row_bg">
+
+                        <TextView
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:text="back width"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/back_width_measurement"
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/half_shoulder_width_left_row"
+                        android:background="@drawable/table_row_bg">
+
+                        <TextView
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:text="half shoulder width left"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/half_shoulder_width_left_measurement"
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/half_shoulder_width_right_row"
+                        android:background="@drawable/table_row_bg">
+
+                        <TextView
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:text="half shoulder width right"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/half_shoulder_width_right_measurement"
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/full_back_length_row"
+                        android:background="@drawable/table_row_bg">
+
+                        <TextView
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:text="full back length"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/full_back_length_measurement"
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/half_back_length_row"
+                        android:background="@drawable/table_row_bg">
+
+                        <TextView
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:text="half back length"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/half_back_length_measurement"
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/trouser_waist_row"
+                        android:background="@drawable/table_row_bg">
+
+                        <TextView
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:text="trouser waist"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/trouser_waist_measurement"
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:text="38"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/trouser_outseam_row"
+                        android:background="@drawable/table_row_bg">
+
+                        <TextView
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:text="trouser outseam"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/trouser_outseam_measurement"
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/trouser_inseam_row"
+                        android:background="@drawable/table_row_bg">
+
+                        <TextView
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:text="trouser inseam"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/trouser_inseam_measurement"
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/crotch_row"
+                        android:background="@drawable/table_row_bg">
+
+                        <TextView
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:text="crotch"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/crotch_measurement"
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/thigh_row"
+                        android:background="@drawable/table_row_bg">
+
+                        <TextView
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:text="thigh"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/thigh_measurement"
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/knee_row"
+                        android:background="@drawable/table_row_bg">
+
+                        <TextView
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:text="knee"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/knee_measurement"
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/right_full_sleeve_row"
+                        android:background="@drawable/table_row_bg">
+
+                        <TextView
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:text="right full sleeve"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/right_full_sleeve_measurement"
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/left_full_sleeve_row"
+                        android:background="@drawable/table_row_bg">
+
+                        <TextView
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:text="left full sleeve"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/left_full_sleeve_measurement"
+                            android:layout_width="380dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_span="1"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+
+
+                </TableLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>

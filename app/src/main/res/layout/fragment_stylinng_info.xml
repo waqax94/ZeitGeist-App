@@ -1,0 +1,1392 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zeitgeist.employee.Fragments.StylinngInfoFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <RelativeLayout
+                    android:id="@+id/fabric_lining_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:id="@+id/fabric_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:layout_margin="5dp"
+                        android:text="fabric"
+                        android:textSize="25dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/fabric_data_display"
+                        android:layout_width="300dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="10dp"
+                        android:layout_alignLeft="@id/fabric_heading"
+                        android:layout_below="@id/fabric_heading"
+                        android:background="@drawable/field_bg">
+
+                        <ImageView
+                            android:id="@+id/fabric_img"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:layout_margin="10dp"
+                            android:scaleType="centerCrop" />
+
+                        <TextView
+                            android:id="@+id/fabric_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/fabric_img"
+                            android:textSize="23dp"
+                            android:textColor="@color/field_name"
+                            android:textAllCaps="true"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/lining_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:text="lining"
+                        android:textSize="25dp"
+                        android:layout_margin="5dp"
+                        android:layout_alignLeft="@+id/lining_data_display"/>
+
+                    <RelativeLayout
+                        android:id="@+id/lining_data_display"
+                        android:layout_width="300dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="10dp"
+                        android:layout_toRightOf="@id/fabric_data_display"
+                        android:layout_below="@id/lining_heading"
+                        android:background="@drawable/field_bg">
+
+                        <ImageView
+                            android:id="@+id/lining_img"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:layout_margin="10dp"
+                            android:scaleType="centerCrop" />
+
+                        <TextView
+                            android:id="@+id/lining_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/lining_img"
+                            android:textSize="23dp"
+                            android:textAllCaps="true"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/styling_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="35dp"
+                    android:layout_margin="30dp"
+                    android:text="STYLING"
+                    android:textAllCaps="true"
+                    android:layout_below="@id/fabric_lining_display"
+                    android:textColor="@color/colorAccent"/>
+
+                <GridLayout
+                    android:id="@+id/styling_grids"
+                    android:columnCount="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/styling_heading">
+
+                    <RelativeLayout
+                        android:id="@+id/jacket_style_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/jacket_style_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="jacket style"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/jacket_style_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/jacket_style_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/jacket_style_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/jacket_style_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lapel_style_sb_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/lapel_style_sb_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="lapel style"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/lapel_style_sb_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/lapel_style_sb_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/lapel_style_sb_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/lapel_style_sb_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lapel_curvature_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/lapel_curvature_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="lapel curvature"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/lapel_curvature_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/lapel_curvature_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/lapel_curvature_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/lapel_curvature_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lapel_size_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/lapel_size_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="lapel size"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/lapel_size_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/lapel_size_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/lapel_size_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/lapel_size_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/vent_style_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/vent_style_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="vent style"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/vent_style_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/vent_style_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/vent_style_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/vent_style_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/breast_pocket_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/breast_pocket_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="breast pocket"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/breast_pocket_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/breast_pocket_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/breast_pocket_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/breast_pocket_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/side_pocket_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/side_pocket_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="side pocket"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/side_pocket_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/side_pocket_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/side_pocket_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/side_pocket_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/ticket_pocket_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/ticket_pocket_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="ticket pocket"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/ticket_pocket_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/ticket_pocket_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/ticket_pocket_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/ticket_pocket_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/cuff_button_style_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/cuff_button_style_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="cuff button style"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/cuff_button_style_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/cuff_button_style_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/cuff_button_style_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/cuff_button_style_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/trouser_pleats_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/trouser_pleats_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="trouser pleats"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/trouser_pleats_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/trouser_pleats_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/trouser_pleats_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/trouser_pleats_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/trouser_back_pocket_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/trouser_back_pocket_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="trouser back pocket"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/trouser_back_pocket_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/trouser_back_pocket_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/trouser_back_pocket_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/trouser_back_pocket_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/trouser_cuff_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/trouser_cuff_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="trouser cuff"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/trouser_cuff_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/trouser_cuff_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/trouser_cuff_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/trouser_cuff_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/trouser_loop_tab_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/trouser_loop_tab_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="trouser loop tab"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/trouser_loop_tab_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/trouser_loop_tab_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/trouser_loop_tab_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/trouser_loop_tab_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/waist_coat_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/waist_coat_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="waist coat"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/waist_coat_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/waist_coat_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/waist_coat_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/waist_coat_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/waist_coat_pocket_type_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/waist_coat_pocket_type_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="waist coat pocket"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/waist_coat_pocket_type_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/waist_coat_pocket_type_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/waist_coat_pocket_type_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/waist_coat_pocket_type_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/waist_coat_back_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/waist_coat_back_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="waist coat back"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/waist_coat_back_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/waist_coat_back_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/waist_coat_back_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/waist_coat_back_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/jacket_length_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/jacket_length_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="jacket length"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/jacket_length_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/jacket_length_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/jacket_length_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/jacket_length_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lapel_pick_stitch_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/lapel_pick_stitch_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="lapel pick stitch"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/lapel_pick_stitch_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/lapel_pick_stitch_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/lapel_pick_stitch_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/lapel_pick_stitch_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/shoulder_construction_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/shoulder_construction_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="shoulder construction"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/shoulder_construction_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/shoulder_construction_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/shoulder_construction_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/shoulder_construction_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/buttons_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/buttons_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="buttons"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/buttons_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/buttons_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/buttons_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/buttons_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lapel_eyelet_color_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/lapel_eyelet_color_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="lapel eyelet color"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/lapel_eyelet_color_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/lapel_eyelet_color_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/lapel_eyelet_color_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/lapel_eyelet_color_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/cuff_eyelet_color_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/cuff_eyelet_color_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="cuff eyelet color"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/cuff_eyelet_color_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/cuff_eyelet_color_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/cuff_eyelet_color_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/cuff_eyelet_color_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/piping_color_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/piping_color_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="piping color"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/piping_color_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/piping_color_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/piping_color_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/piping_color_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/melton_undercollar_number_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/melton_undercollar_number_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="melton/undercollar"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/melton_undercollar_number_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/melton_undercollar_number_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/melton_undercollar_number_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/melton_undercollar_number_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/jacket_fit_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/jacket_fit_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="jacket fit"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/jacket_fit_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/jacket_fit_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/jacket_fit_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/jacket_fit_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/trouser_fit_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/trouser_fit_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="trouser fit"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/trouser_fit_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/trouser_fit_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/trouser_fit_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/trouser_fit_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/functional_cuffs_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/functional_cuffs_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="functional cuffs"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/functional_cuffs_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/functional_cuffs_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/functional_cuffs_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/functional_cuffs_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/front_panel_roundness_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/front_panel_roundness_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"
+                            android:text="front panel"/>
+
+                        <RelativeLayout
+                            android:layout_width="166dp"
+                            android:layout_height="230dp"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/front_panel_roundness_heading"
+                            android:background="@color/btn_dark_text">
+
+                            <ImageView
+                                android:id="@+id/front_panel_roundness_image"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/grid_bg_unselected"/>
+
+                            <TextView
+                                android:id="@+id/front_panel_roundness_name"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="13dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/field_name"
+                                android:layout_below="@id/front_panel_roundness_image" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </GridLayout>
+
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>

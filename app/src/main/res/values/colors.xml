@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#111111</color>
+    <color name="colorPrimaryDark">#020202</color>
+    <color name="colorAccent">#363636</color>
+    <color name="header_text">#d1cfd0</color>
+    <color name="header_line">#262626</color>
+    <color name="side_btn_u">#e1e1e1</color>
+    <color name="field_name">#5b5b5b</color>
+    <color name="field_color">#e7e3e2</color>
+    <color name="side_btn_text_u">#939393</color>
+    <color name="side_btn_c">#c1c1c1</color>
+    <color name="side_btn_text_c">#1e1e1e</color>
+    <color name="btn_light_color">#f3f3f3</color>
+    <color name="btn_light_border">#d1d1d1</color>
+    <color name="btn_light_text">#3e3e3e</color>
+    <color name="btn_light_click">#616161</color>
+    <color name="btn_dark_color">#252525</color>
+    <color name="btn_dark_text">#e6e4e5</color>
+    <color name="btn_dark_click">#616161</color>
+    <color name="login_panel">#f9f9f9</color>
+    <color name="background">#ffffff</color>
+    <color name="img_background">#dc000000</color>
+</resources>

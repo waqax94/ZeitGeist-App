@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    tools:context="com.zeitgeist.employee.Activities.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/splash_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/color_logo"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/zeitgeist_logo_color"
+            />
+
+        <RelativeLayout
+            android:id="@+id/login_form_container"
+            android:layout_width="450dp"
+            android:layout_height="380dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/login_panel">
+
+            <TextView
+                android:id="@+id/shop_id_text_l"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="SHOP ID"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/field_name"
+                android:textSize="25dp"/>
+
+            <EditText
+                android:id="@+id/shop_id_l"
+                android:padding="5dp"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:textColor="@color/field_name"
+                android:layout_marginTop="2dp"
+                android:layout_below="@id/shop_id_text_l"
+                android:layout_centerHorizontal="true"
+                android:textSize="25dp"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@+id/shop_pw_l"
+                android:background="@drawable/field_bg"/>
+
+            <TextView
+                android:id="@+id/shop_pw_text_l"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/shop_id_l"
+                android:text="PASSWORD"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/field_name"
+                android:textSize="25dp"/>
+
+            <EditText
+                android:id="@+id/shop_pw_l"
+                android:inputType="textPassword"
+                android:layout_width="350dp"
+                android:padding="5dp"
+                android:layout_height="40dp"
+                android:textColor="@color/field_name"
+                android:layout_marginTop="2dp"
+                android:layout_below="@id/shop_pw_text_l"
+                android:layout_centerHorizontal="true"
+                android:textSize="25dp"
+                android:imeActionLabel="LOGIN"
+                android:imeOptions="actionDone"
+                android:background="@drawable/field_bg"
+                />
+
+            <Button
+                android:id="@+id/login_btn_l"
+                android:layout_width="170dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/shop_pw_l"
+                android:textColor="@color/btn_dark_text"
+                android:textSize="25dp"
+                android:text="LOGIN"
+                android:background="@drawable/login_btn_bg"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_information"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.zeitgeist.employee.Activities.InformationActivity"
+    tools:showIn="@layout/activity_information">
+
+    <ImageButton
+        android:id="@+id/info_back_btn"
+        android:padding="5dp"
+        android:layout_margin="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_arrow_back_24dp"
+        />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/main_info_logo"
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/zeitgeist_logo_color"/>
+
+            <TextView
+                android:id="@+id/info_subheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_info_logo"
+                android:layout_centerHorizontal="true"
+                android:text="order taking application"
+                android:textAllCaps="true"
+                android:textSize="35dp"/>
+
+            <TextView
+                android:id="@+id/info_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/info_subheading"
+                android:layout_centerHorizontal="true"
+                android:text="@string/version_information"
+                android:textSize="25dp"/>
+
+            <RelativeLayout
+                android:id="@+id/info_display_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/info_version"
+                android:layout_centerHorizontal="true">
+
+                <View
+                    android:id="@+id/line_a_1"
+                    android:layout_width="150dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/btn_dark_color"/>
+
+                <TextView
+                    android:id="@+id/info_about_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:layout_toRightOf="@id/line_a_1"
+                    android:text="about"
+                    android:layout_margin="10dp"
+                    android:textAllCaps="true"/>
+
+                <View
+                    android:id="@+id/line_a_2"
+                    android:layout_width="150dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@id/info_about_text"
+                    android:background="@color/btn_dark_color"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/info_about_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/info_display_about"
+                android:textAlignment="center"
+                android:text="A premium brand of Men and Ladies \n formal and smart casual wear with a 20 year history \n of bringing class and quality to the initiated. \n Please call our UAN +92 335 0263333 for any further \n information and assistance."/>
+
+            <RelativeLayout
+                android:id="@+id/info_display_developers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/info_about_info"
+                android:layout_centerHorizontal="true">
+
+                <View
+                    android:id="@+id/line_d_1"
+                    android:layout_width="150dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/btn_dark_color"/>
+
+                <TextView
+                    android:id="@+id/info_developers_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:layout_toRightOf="@id/line_d_1"
+                    android:text="developers"
+                    android:layout_margin="10dp"
+                    android:textAllCaps="true"/>
+
+                <View
+                    android:id="@+id/line_d_2"
+                    android:layout_width="150dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@id/info_developers_text"
+                    android:background="@color/btn_dark_color"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/info_about_waqas"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/info_display_developers">
+
+                <TextView
+                    android:id="@+id/developer_name_w"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="waqas waheed"
+                    android:textAllCaps="true"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/developer_role_w"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/developer_name_w"
+                    android:layout_toRightOf="@id/developer_name_w"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="(Android Developer)"/>
+
+                <TextView
+                    android:id="@+id/developer_email_w"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/developer_name_w"
+                    android:textSize="20dp"
+                    android:text="waqax94@gmail.com"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/info_about_usama"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/info_about_waqas">
+
+                <TextView
+                    android:id="@+id/developer_name_u"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="usama waheed"
+                    android:textAllCaps="true"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/developer_role_u"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/developer_name_u"
+                    android:layout_toRightOf="@id/developer_name_u"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="(Web Developer)"/>
+
+                <TextView
+                    android:id="@+id/developer_email_u"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/developer_name_u"
+                    android:textSize="20dp"
+                    android:text="usamaw94@gmail.com"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/info_about_tauseef"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/info_about_usama">
+
+                <TextView
+                    android:id="@+id/developer_name_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="tauseef ejaz"
+                    android:textAllCaps="true"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/developer_role_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/developer_name_t"
+                    android:layout_toRightOf="@id/developer_name_t"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="(Designer)"/>
+
+                <TextView
+                    android:id="@+id/developer_email_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/developer_name_t"
+                    android:textSize="20dp"
+                    android:text="tauseefejaz7@gmail.com"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

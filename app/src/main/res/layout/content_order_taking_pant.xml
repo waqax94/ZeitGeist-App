@@ -1,0 +1,1557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_order_taking_pant"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.zeitgeist.employee.Activities.OrderTakingPant"
+    tools:showIn="@layout/activity_order_taking_pant">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/side_btn_layout"
+        android:layout_width="250dp"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_weight="0.2"
+            android:id="@+id/customer_info_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="CUSTOMER INFO"
+            android:textColor="@color/side_btn_text_c"
+            android:textSize="25dp"
+            android:background="@drawable/side_btn_c_bg"/>
+
+        <Button
+            android:layout_weight="0.2"
+            android:id="@+id/fabric_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="FABRIC AND LINING"
+            android:textColor="@color/side_btn_text_u"
+            android:textSize="25dp"
+            android:background="@drawable/side_btn_u_bg"/>
+
+        <Button
+            android:id="@+id/measurement_btn"
+            android:layout_weight="0.2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="MEASUREMENTS"
+            android:textColor="@color/side_btn_text_u"
+            android:textSize="25dp"
+            android:background="@drawable/side_btn_u_bg"/>
+
+        <Button
+            android:id="@+id/suit_styling_btn"
+            android:layout_weight="0.2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SUIT STYLING"
+            android:textColor="@color/side_btn_text_u"
+            android:textSize="25dp"
+            android:background="@drawable/side_btn_u_bg"/>
+
+        <Button
+            android:id="@+id/invoice_btn"
+            android:layout_weight="0.2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="INVOICE"
+            android:textColor="@color/side_btn_text_u"
+            android:textSize="25dp"
+            android:background="@drawable/side_btn_u_bg"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/side_btn_layout">
+
+        <RelativeLayout
+            android:id="@+id/customer_info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/customer_info_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:paddingBottom="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/name_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NAME"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/field_name"/>
+
+                    <EditText
+                        android:id="@+id/name_data"
+                        android:layout_width="500dp"
+                        android:layout_height="50dp"
+                        android:padding="4dp"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_below="@id/name_text"
+                        android:textColor="@color/field_name"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:nextFocusDown="@+id/contact_two_digits_p"
+                        android:background="@drawable/field_bg"/>
+
+                    <TextView
+                        android:id="@+id/contact_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CONTACT"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/name_data"
+                        android:textColor="@color/field_name"/>
+
+                    <TextView
+                        android:id="@+id/zero_three_p"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="03"
+                        android:textSize="40dp"
+                        android:textColor="@color/field_name"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_below="@id/contact_text"/>
+
+                    <EditText
+                        android:id="@+id/contact_two_digits_p"
+                        android:inputType="number"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:padding="4dp"
+                        android:textAlignment="center"
+                        android:layout_toRightOf="@id/zero_three_p"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_below="@id/contact_text"
+                        android:maxLength="2"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:textColor="@color/field_name"
+                        android:nextFocusRight="@+id/contact_seven_digits_p"
+                        android:background="@drawable/field_bg"/>
+
+                    <EditText
+                        android:id="@+id/contact_seven_digits_p"
+                        android:inputType="number"
+                        android:layout_width="290dp"
+                        android:layout_height="50dp"
+                        android:padding="4dp"
+                        android:layout_toRightOf="@id/contact_two_digits_p"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textAlignment="center"
+                        android:layout_below="@id/contact_text"
+                        android:maxLength="7"
+                        android:textColor="@color/field_name"
+                        android:nextFocusDown="@+id/email_data"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:background="@drawable/field_bg"/>
+
+                    <ImageButton
+                        android:id="@+id/add_secondary_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/addbtn_bg"
+                        android:layout_toRightOf="@id/contact_seven_digits_p"
+                        android:layout_below="@id/contact_text"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_add_black_36dp"/>
+
+                    <RelativeLayout
+                        android:id="@+id/secondary_contact_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_below="@id/zero_three_p"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/zero_three_s"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="03"
+                            android:textSize="40dp"
+                            android:textColor="@color/field_name"
+                            />
+
+                        <EditText
+                            android:id="@+id/contact_two_digits_s"
+                            android:inputType="number"
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:padding="4dp"
+                            android:textAlignment="center"
+                            android:layout_toRightOf="@id/zero_three_s"
+                            android:textSize="22dp"
+                            android:layout_marginLeft="10dp"
+                            android:maxLength="2"
+                            android:textColor="@color/field_name"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true"
+                            android:nextFocusRight="@+id/contact_seven_digits_s"
+                            android:background="@drawable/field_bg"/>
+
+                        <EditText
+                            android:id="@+id/contact_seven_digits_s"
+                            android:inputType="number"
+                            android:layout_width="290dp"
+                            android:layout_height="50dp"
+                            android:padding="4dp"
+                            android:layout_toRightOf="@id/contact_two_digits_s"
+                            android:textSize="22dp"
+                            android:layout_marginLeft="10dp"
+                            android:textAlignment="center"
+                            android:maxLength="7"
+                            android:textColor="@color/field_name"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true"
+                            android:nextFocusDown="@+id/email_data"
+                            android:background="@drawable/field_bg"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/email_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EMAIL"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/secondary_contact_layout"
+                        android:textColor="@color/field_name"/>
+
+                    <EditText
+                        android:id="@+id/email_data"
+                        android:layout_width="500dp"
+                        android:layout_height="50dp"
+                        android:padding="4dp"
+                        android:inputType="textEmailAddress"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_below="@id/email_text"
+                        android:textColor="@color/field_name"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:nextFocusDown="@+id/address_data"
+                        android:background="@drawable/field_bg"/>
+
+                    <TextView
+                        android:id="@+id/address_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ADDRESS"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/email_data"
+                        android:textColor="@color/field_name"/>
+
+                    <EditText
+                        android:id="@+id/address_data"
+                        android:layout_width="500dp"
+                        android:layout_height="150dp"
+                        android:padding="4dp"
+                        android:inputType="textLongMessage"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_below="@id/address_text"
+                        android:textColor="@color/field_name"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true"
+                        android:background="@drawable/field_bg"/>
+
+                    <TextView
+                        android:id="@+id/fabric_choice_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FABRIC CHOICE"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/address_data"
+                        android:textColor="@color/field_name"/>
+
+
+                    <Spinner
+                        android:id="@+id/fabric_choice_data"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_below="@id/fabric_choice_text"
+                        style="@style/Widget.App.Spinner"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"/>
+
+                    <TextView
+                        android:id="@+id/date_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DELIVERY DATE"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/fabric_choice_data"
+                        android:textColor="@color/field_name"/>
+
+
+                    <Button
+                        android:id="@+id/date_data"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:padding="4dp"
+                        android:textAlignment="center"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_below="@id/date_text"
+                        android:textColor="@color/field_name"
+                        android:background="@drawable/field_bg"/>
+
+
+                    <TextView
+                        android:id="@+id/order_type_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ORDER TYPE"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/date_data"
+                        android:textColor="@color/field_name"/>
+
+                    <Spinner
+                        android:id="@+id/order_type_data"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_below="@id/order_type_text"
+                        style="@style/Widget.App.Spinner"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"/>
+
+                    <TextView
+                        android:id="@+id/base_pattern_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BASE PATTERN"
+                        android:textSize="22dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_alignLeft="@+id/base_pattern_data"
+                        android:layout_below="@id/date_data"
+                        android:textColor="@color/field_name"
+                        android:visibility="gone"/>
+
+                    <Spinner
+                        android:id="@+id/base_pattern_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:minWidth="200dp"
+                        android:layout_marginLeft="20dp"
+                        android:paddingRight="30dp"
+                        android:layout_below="@id/order_type_text"
+                        android:layout_toRightOf="@id/order_type_data"
+                        style="@style/Widget.App.Spinner"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/base_size_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BASE SIZE"
+                        android:textSize="22dp"
+                        android:layout_alignLeft="@+id/base_size_data"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/date_data"
+                        android:textColor="@color/field_name"
+                        android:visibility="gone"/>
+
+                    <Spinner
+                        android:id="@+id/base_size_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:minWidth="100dp"
+                        android:paddingRight="30dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@id/order_type_text"
+                        android:layout_toRightOf="@id/base_pattern_data"
+                        style="@style/Widget.App.Spinner"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/city_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CITY"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/order_type_data"
+                        android:textColor="@color/field_name"/>
+
+                    <Spinner
+                        android:id="@+id/city_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:minWidth="250dp"
+                        android:paddingRight="30dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_below="@id/city_text"
+                        style="@style/Widget.App.Spinner"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"/>
+
+
+                    <Button
+                        android:id="@+id/next_btn_c"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/city_data"
+                        android:text="NEXT"
+                        android:textSize="25dp"
+                        android:textColor="@color/btn_dark_text"
+                        android:background="@drawable/login_btn_bg"/>
+
+                </RelativeLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fabric_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/fabrics_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FABRICS"
+                android:textSize="22dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/field_name"/>
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/fabric_search_data"
+                android:layout_width="390dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/field_name"
+                android:layout_below="@id/fabrics_text"
+                android:layout_marginLeft="50dp"
+                android:queryHint="Search Fabric...."
+                android:background="@drawable/searchbar_bg"/>
+
+            <GridView
+                android:id="@+id/fabric_list"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:numColumns="2"
+                android:horizontalSpacing="5dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/fabric_search_data"
+                android:layout_marginBottom="70dp"
+                android:background="@drawable/field_bg" />
+
+            <Button
+                android:id="@+id/fabric_selection_clear"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="26dp"
+                android:textSize="18dp"
+                android:text="CLEAR"
+                android:layout_alignRight="@id/fabric_list"
+                android:textColor="@color/btn_dark_text"
+                android:background="@drawable/login_btn_bg"
+                />
+
+            <Button
+                android:id="@+id/next_btn_f"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:text="NEXT"
+                android:textSize="25dp"
+                android:textColor="@color/btn_dark_text"
+                android:background="@drawable/login_btn_bg"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/measurement_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/measurement_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/stance_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="STANCE"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/field_name"/>
+
+
+                    <com.zeitgeist.employee.Services.GridViewScrollable
+                        android:id="@+id/stance_list"
+                        android:layout_width="700dp"
+                        android:layout_height="250dp"
+                        android:padding="10dp"
+                        android:numColumns="4"
+                        android:stretchMode="columnWidth"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:scrollbars="vertical"
+                        android:fadeScrollbars="false"
+                        android:horizontalSpacing="5dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_below="@id/stance_text"
+                        android:background="@drawable/field_bg"/>
+
+                    <TextView
+                        android:id="@+id/hip_description_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HIP DESCRIPTION"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/stance_list"
+                        android:textColor="@color/field_name"/>
+
+                    <com.zeitgeist.employee.Services.GridViewScrollable
+                        android:id="@+id/hip_description_list"
+                        android:layout_width="700dp"
+                        android:layout_height="250dp"
+                        android:padding="10dp"
+                        android:numColumns="4"
+                        android:horizontalSpacing="5dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="15dp"
+                        android:stretchMode="columnWidth"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:scrollbars="vertical"
+                        android:fadeScrollbars="false"
+                        android:gravity="center"
+                        android:layout_below="@id/hip_description_text"
+                        android:background="@drawable/field_bg"/>
+
+
+                    <TextView
+                        android:id="@+id/hip_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HIP"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/hip_description_list"
+                        android:textColor="@color/field_name" />
+
+                    <RelativeLayout
+                        android:id="@+id/hip_layout"
+                        android:layout_width="700dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_below="@id/hip_text"
+                        android:background="@drawable/field_bg">
+
+                        <ImageView
+                            android:id="@+id/hip_img"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_centerVertical="true"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/measurements"
+                            android:padding="1dp"
+                            android:background="@drawable/grid_bg_unselected"/>
+
+                        <ImageButton
+                            android:id="@+id/hip_zoom_icon"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_zoom_in_black_24dp"
+                            android:layout_alignEnd="@id/hip_img"
+                            android:layout_alignBottom="@id/hip_img"
+                            android:background="@drawable/login_btn_bg" />
+
+                        <Button
+                            android:id="@+id/hip_sign_btn"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@id/hip_img"
+                            android:background="@drawable/sign_btn_bg"
+                            android:textColor="@color/field_name"
+                            android:text="+"
+                            android:textSize="40dp"
+                            android:visibility="gone"/>
+
+                        <EditText
+                            android:id="@+id/hip_data"
+                            android:layout_width="350dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="60dp"
+                            android:layout_centerVertical="true"
+                            android:inputType="numberDecimal"
+                            android:padding="4dp"
+                            android:imeOptions="actionNext"
+                            android:nextFocusDown="@+id/full_back_length_data"
+                            android:layout_toRightOf="@id/hip_img"
+                            android:background="@drawable/m_field_bg"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/field_name"
+                            android:textSize="18dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="(inches)"
+                            android:layout_toRightOf="@id/hip_data"/>
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/full_back_length_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FULL BACK LENGTH"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/hip_layout"
+                        android:textColor="@color/field_name" />
+
+                    <RelativeLayout
+                        android:id="@+id/full_back_length_layout"
+                        android:layout_width="700dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_below="@id/full_back_length_text"
+                        android:background="@drawable/field_bg">
+
+                        <ImageView
+                            android:id="@+id/full_back_length_img"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_centerVertical="true"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/measurements"
+                            android:padding="1dp"
+                            android:background="@drawable/grid_bg_unselected"/>
+
+                        <ImageButton
+                            android:id="@+id/full_back_length_zoom_icon"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_zoom_in_black_24dp"
+                            android:layout_alignEnd="@id/full_back_length_img"
+                            android:layout_alignBottom="@id/full_back_length_img"
+                            android:background="@drawable/login_btn_bg" />
+
+                        <Button
+                            android:id="@+id/full_back_length_sign_btn"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@id/full_back_length_img"
+                            android:background="@drawable/sign_btn_bg"
+                            android:textColor="@color/field_name"
+                            android:text="+"
+                            android:textSize="40dp"
+                            android:visibility="gone"/>
+
+                        <EditText
+                            android:id="@+id/full_back_length_data"
+                            android:layout_width="350dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="60dp"
+                            android:layout_centerVertical="true"
+                            android:inputType="numberDecimal"
+                            android:padding="4dp"
+                            android:imeOptions="actionNext"
+                            android:nextFocusDown="@+id/trouser_waist_data"
+                            android:layout_toRightOf="@id/full_back_length_img"
+                            android:background="@drawable/m_field_bg"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/field_name"
+                            android:textSize="18dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="(inches)"
+                            android:layout_toRightOf="@id/full_back_length_data"/>
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/trouser_waist_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TROUSER WAIST"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/full_back_length_layout"
+                        android:textColor="@color/field_name" />
+
+                    <RelativeLayout
+                        android:id="@+id/trouser_waist_layout"
+                        android:layout_width="700dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_below="@id/trouser_waist_text"
+                        android:background="@drawable/field_bg">
+
+                        <ImageView
+                            android:id="@+id/trouser_waist_img"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_centerVertical="true"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/measurements"
+                            android:padding="1dp"
+                            android:background="@drawable/grid_bg_unselected"/>
+
+                        <ImageButton
+                            android:id="@+id/trouser_waist_zoom_icon"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_zoom_in_black_24dp"
+                            android:layout_alignEnd="@id/trouser_waist_img"
+                            android:layout_alignBottom="@id/trouser_waist_img"
+                            android:background="@drawable/login_btn_bg" />
+
+                        <Button
+                            android:id="@+id/trouser_waist_sign_btn"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@id/trouser_waist_img"
+                            android:background="@drawable/sign_btn_bg"
+                            android:textColor="@color/field_name"
+                            android:text="+"
+                            android:textSize="40dp"
+                            android:visibility="gone"/>
+
+                        <EditText
+                            android:id="@+id/trouser_waist_data"
+                            android:layout_width="350dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="60dp"
+                            android:layout_centerVertical="true"
+                            android:inputType="numberDecimal"
+                            android:padding="4dp"
+                            android:imeOptions="actionNext"
+                            android:nextFocusDown="@+id/trouser_outseam_data"
+                            android:layout_toRightOf="@id/trouser_waist_img"
+                            android:background="@drawable/m_field_bg"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/field_name"
+                            android:textSize="18dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="(inches)"
+                            android:layout_toRightOf="@id/trouser_waist_data"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/trouser_outseam_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TROUSER OUTSEAM"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/trouser_waist_layout"
+                        android:textColor="@color/field_name" />
+
+                    <RelativeLayout
+                        android:id="@+id/trouser_outseam_layout"
+                        android:layout_width="700dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_below="@id/trouser_outseam_text"
+                        android:background="@drawable/field_bg">
+
+                        <ImageView
+                            android:id="@+id/trouser_outseam_img"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_centerVertical="true"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/measurements"
+                            android:padding="1dp"
+                            android:background="@drawable/grid_bg_unselected"/>
+
+                        <ImageButton
+                            android:id="@+id/trouser_outseam_zoom_icon"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_zoom_in_black_24dp"
+                            android:layout_alignEnd="@id/trouser_outseam_img"
+                            android:layout_alignBottom="@id/trouser_outseam_img"
+                            android:background="@drawable/login_btn_bg" />
+
+                        <Button
+                            android:id="@+id/trouser_outseam_sign_btn"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@id/trouser_outseam_img"
+                            android:background="@drawable/sign_btn_bg"
+                            android:textColor="@color/field_name"
+                            android:text="+"
+                            android:textSize="40dp"
+                            android:visibility="gone"/>
+
+                        <EditText
+                            android:id="@+id/trouser_outseam_data"
+                            android:layout_width="350dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="60dp"
+                            android:layout_centerVertical="true"
+                            android:inputType="numberDecimal"
+                            android:padding="4dp"
+                            android:imeOptions="actionNext"
+                            android:nextFocusDown="@+id/trouser_inseam_data"
+                            android:layout_toRightOf="@id/trouser_outseam_img"
+                            android:background="@drawable/m_field_bg"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/field_name"
+                            android:textSize="18dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="(inches)"
+                            android:layout_toRightOf="@id/trouser_outseam_data"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/trouser_inseam_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TROUSER INSEAM"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/trouser_outseam_layout"
+                        android:textColor="@color/field_name" />
+
+                    <RelativeLayout
+                        android:id="@+id/trouser_inseam_layout"
+                        android:layout_width="700dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_below="@id/trouser_inseam_text"
+                        android:background="@drawable/field_bg">
+
+                        <ImageView
+                            android:id="@+id/trouser_inseam_img"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_centerVertical="true"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/measurements"
+                            android:padding="1dp"
+                            android:background="@drawable/grid_bg_unselected"/>
+
+                        <ImageButton
+                            android:id="@+id/trouser_inseam_zoom_icon"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_zoom_in_black_24dp"
+                            android:layout_alignEnd="@id/trouser_inseam_img"
+                            android:layout_alignBottom="@id/trouser_inseam_img"
+                            android:background="@drawable/login_btn_bg" />
+
+                        <Button
+                            android:id="@+id/trouser_inseam_sign_btn"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@id/trouser_inseam_img"
+                            android:background="@drawable/sign_btn_bg"
+                            android:textColor="@color/field_name"
+                            android:text="+"
+                            android:textSize="40dp"
+                            android:visibility="gone"/>
+
+                        <EditText
+                            android:id="@+id/trouser_inseam_data"
+                            android:layout_width="350dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="60dp"
+                            android:layout_centerVertical="true"
+                            android:inputType="numberDecimal"
+                            android:padding="4dp"
+                            android:imeOptions="actionNext"
+                            android:nextFocusDown="@+id/thigh_data"
+                            android:layout_toRightOf="@id/trouser_inseam_img"
+                            android:background="@drawable/m_field_bg"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/field_name"
+                            android:textSize="18dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="(inches)"
+                            android:layout_toRightOf="@id/trouser_inseam_data"/>
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/thigh_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="THIGH"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/trouser_inseam_layout"
+                        android:textColor="@color/field_name" />
+
+                    <RelativeLayout
+                        android:id="@+id/thigh_layout"
+                        android:layout_width="700dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_below="@id/thigh_text"
+                        android:background="@drawable/field_bg">
+
+                        <ImageView
+                            android:id="@+id/thigh_img"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_centerVertical="true"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/measurements"
+                            android:padding="1dp"
+                            android:background="@drawable/grid_bg_unselected"/>
+
+                        <ImageButton
+                            android:id="@+id/thigh_zoom_icon"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_zoom_in_black_24dp"
+                            android:layout_alignEnd="@id/thigh_img"
+                            android:layout_alignBottom="@id/thigh_img"
+                            android:background="@drawable/login_btn_bg" />
+
+                        <Button
+                            android:id="@+id/thigh_sign_btn"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@id/thigh_img"
+                            android:background="@drawable/sign_btn_bg"
+                            android:textColor="@color/field_name"
+                            android:text="+"
+                            android:textSize="40dp"
+                            android:visibility="gone"/>
+
+                        <EditText
+                            android:id="@+id/thigh_data"
+                            android:layout_width="350dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="60dp"
+                            android:layout_centerVertical="true"
+                            android:inputType="numberDecimal"
+                            android:padding="4dp"
+                            android:imeOptions="actionNext"
+                            android:nextFocusDown="@+id/knee_data"
+                            android:layout_toRightOf="@id/thigh_img"
+                            android:background="@drawable/m_field_bg"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/field_name"
+                            android:textSize="18dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="(inches)"
+                            android:layout_toRightOf="@id/thigh_data"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/knee_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="KNEE"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/thigh_layout"
+                        android:textColor="@color/field_name" />
+
+                    <RelativeLayout
+                        android:id="@+id/knee_layout"
+                        android:layout_width="700dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_below="@id/knee_text"
+                        android:background="@drawable/field_bg">
+
+                        <ImageView
+                            android:id="@+id/knee_img"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_centerVertical="true"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/measurements"
+                            android:padding="1dp"
+                            android:background="@drawable/grid_bg_unselected"/>
+
+                        <ImageButton
+                            android:id="@+id/knee_zoom_icon"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_zoom_in_black_24dp"
+                            android:layout_alignEnd="@id/knee_img"
+                            android:layout_alignBottom="@id/knee_img"
+                            android:background="@drawable/login_btn_bg" />
+
+                        <Button
+                            android:id="@+id/knee_sign_btn"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@id/knee_img"
+                            android:background="@drawable/sign_btn_bg"
+                            android:textColor="@color/field_name"
+                            android:text="+"
+                            android:textSize="40dp"
+                            android:visibility="gone"/>
+
+                        <EditText
+                            android:id="@+id/knee_data"
+                            android:layout_width="350dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="60dp"
+                            android:layout_centerVertical="true"
+                            android:inputType="numberDecimal"
+                            android:padding="4dp"
+                            android:imeOptions="actionDone"
+                            android:layout_toRightOf="@id/knee_img"
+                            android:background="@drawable/m_field_bg"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/field_name"
+                            android:textSize="18dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="(inches)"
+                            android:layout_toRightOf="@id/knee_data"/>
+
+                    </RelativeLayout>
+
+
+                    <Button
+                        android:id="@+id/next_btn_m"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/knee_layout"
+                        android:text="NEXT"
+                        android:textSize="25dp"
+                        android:textColor="@color/btn_dark_text"
+                        android:background="@drawable/login_btn_bg"/>
+
+
+                </RelativeLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/suit_styling_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/suit_styling_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/fabric_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FABRIC NUMBER"
+                        android:textSize="22dp"
+                        android:layout_alignLeft="@+id/fabric_data"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/field_name"/>
+
+                    <TextView
+                        android:id="@+id/fabric_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:minWidth="180dp"
+                        android:textAlignment="center"
+                        android:padding="10dp"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_below="@id/fabric_text"
+                        android:textColor="@color/field_name"
+                        android:background="@drawable/field_bg" />
+
+                    <TextView
+                        android:id="@+id/trouser_pleats_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TROUSER PLEATS"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/fabric_data"
+                        android:textColor="@color/field_name" />
+
+                    <com.zeitgeist.employee.Services.GridViewScrollable
+                        android:id="@+id/trouser_pleats_list"
+                        android:layout_width="700dp"
+                        android:layout_height="250dp"
+                        android:padding="10dp"
+                        android:numColumns="4"
+                        android:horizontalSpacing="5dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="15dp"
+                        android:stretchMode="columnWidth"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:scrollbars="vertical"
+                        android:fadeScrollbars="false"
+                        android:layout_below="@id/trouser_pleats_text"
+                        android:background="@drawable/field_bg"
+                        />
+
+                    <TextView
+                        android:id="@+id/trouser_back_pocket_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TROUSER BACK POCKET"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/trouser_pleats_list"
+                        android:textColor="@color/field_name" />
+
+                    <com.zeitgeist.employee.Services.GridViewScrollable
+                        android:id="@+id/trouser_back_pocket_list"
+                        android:layout_width="700dp"
+                        android:layout_height="250dp"
+                        android:padding="10dp"
+                        android:numColumns="4"
+                        android:horizontalSpacing="5dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="15dp"
+                        android:stretchMode="columnWidth"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:scrollbars="vertical"
+                        android:fadeScrollbars="false"
+                        android:layout_below="@id/trouser_back_pocket_text"
+                        android:background="@drawable/field_bg"
+                        />
+
+                    <TextView
+                        android:id="@+id/trouser_cuff_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TROUSER CUFF"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/trouser_back_pocket_list"
+                        android:textColor="@color/field_name" />
+
+                    <com.zeitgeist.employee.Services.GridViewScrollable
+                        android:id="@+id/trouser_cuff_list"
+                        android:layout_width="700dp"
+                        android:layout_height="250dp"
+                        android:padding="10dp"
+                        android:numColumns="4"
+                        android:horizontalSpacing="5dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="15dp"
+                        android:stretchMode="columnWidth"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:scrollbars="vertical"
+                        android:fadeScrollbars="false"
+                        android:layout_below="@id/trouser_cuff_text"
+                        android:background="@drawable/field_bg"
+                        />
+
+                    <TextView
+                        android:id="@+id/trouser_loop_tab_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TROUSER LOOP TAB"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/trouser_cuff_list"
+                        android:textColor="@color/field_name" />
+
+                    <com.zeitgeist.employee.Services.GridViewScrollable
+                        android:id="@+id/trouser_loop_tab_list"
+                        android:layout_width="700dp"
+                        android:layout_height="250dp"
+                        android:padding="10dp"
+                        android:numColumns="4"
+                        android:horizontalSpacing="5dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="15dp"
+                        android:stretchMode="columnWidth"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:scrollbars="vertical"
+                        android:fadeScrollbars="false"
+                        android:layout_below="@id/trouser_loop_tab_text"
+                        android:background="@drawable/field_bg"
+                        />
+
+                    <TextView
+                        android:id="@+id/trouser_fit_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TROUSER FIT"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/trouser_loop_tab_list"
+                        android:textColor="@color/field_name" />
+
+                    <com.zeitgeist.employee.Services.GridViewScrollable
+                        android:id="@+id/trouser_fit_list"
+                        android:layout_width="700dp"
+                        android:layout_height="250dp"
+                        android:padding="10dp"
+                        android:numColumns="4"
+                        android:horizontalSpacing="5dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="15dp"
+                        android:stretchMode="columnWidth"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:scrollbars="vertical"
+                        android:fadeScrollbars="false"
+                        android:layout_below="@id/trouser_fit_text"
+                        android:background="@drawable/field_bg"
+                        />
+
+
+                    <Button
+                        android:id="@+id/next_btn_s"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/trouser_fit_list"
+                        android:text="NEXT"
+                        android:textSize="25dp"
+                        android:textColor="@color/btn_dark_text"
+                        android:background="@drawable/login_btn_bg"/>
+
+
+                </RelativeLayout>
+
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/invoice_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:padding="30dp"
+                android:background="@drawable/field_bg">
+
+                <TextView
+                    android:id="@+id/amount_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount: "
+                    android:textColor="@color/field_name"
+                    android:textSize="35dp"/>
+
+                <TextView
+                    android:id="@+id/amount_rs_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. "
+                    android:textColor="@color/field_name"
+                    android:layout_toRightOf="@id/amount_text"
+                    android:layout_alignBaseline="@id/amount_text"
+                    android:textSize="35dp"/>
+
+                <TextView
+                    android:id="@+id/calculated_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/field_name"
+                    android:layout_toRightOf="@id/amount_rs_text"
+                    android:layout_alignBaseline="@id/amount_text"
+                    android:textSize="35dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/discount_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/amount_text"
+                    android:layout_marginTop="10dp"
+                    android:padding="20dp"
+                    android:background="@color/btn_light_color">
+
+                    <TextView
+                        android:id="@+id/apply_discount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Apply Discount?"
+                        android:textColor="@color/field_name"
+                        android:textSize="25dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <RadioGroup
+                        android:id="@+id/discount_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_below="@id/apply_discount"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/percentage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Percentage"
+                            android:textSize="25dp"
+                            android:textColor="@color/field_name"/>
+
+                        <RadioButton
+                            android:id="@+id/rupees"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Rupees"
+                            android:textSize="25dp"
+                            android:textColor="@color/field_name"/>
+
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/discount"
+                        android:layout_width="110dp"
+                        android:layout_height="40dp"
+                        android:textColor="@color/field_name"
+                        android:layout_below="@id/discount_type"
+                        android:layout_marginLeft="20dp"
+                        android:padding="4dp"
+                        android:text="0"
+                        android:inputType="number"
+                        android:textSize="25dp"
+                        android:background="@drawable/m_field_bg"/>
+
+                    <TextView
+                        android:id="@+id/discount_type_sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/discount_type"
+                        android:layout_toRightOf="@id/discount"
+                        android:text="Rupees"
+                        android:layout_margin="6dp"
+                        android:textSize="25dp"/>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/your_bill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@id/discount_layout"
+                    android:textColor="@color/field_name"
+                    android:text="Your Bill:"
+                    android:textSize="40dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/final_bill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/field_name"
+                    android:layout_below="@id/your_bill"
+                    android:textSize="35dp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:text="0"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/final_bill"
+                    android:layout_toRightOf="@id/final_bill"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="30dp"
+                    android:text="Rupees Only"
+                    />
+
+                <Button
+                    android:id="@+id/submit_btn"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/final_bill"
+                    android:text="PLACE ORDER"
+                    android:textSize="20dp"
+                    android:textColor="@color/btn_dark_text"
+                    android:background="@drawable/login_btn_bg"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/camera_float_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/camera_float_icon" />
+
+</RelativeLayout>

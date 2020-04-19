@@ -1,0 +1,142 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zeitgeist.employee.Fragments.AllOrderFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/no_order_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No Order Found!"
+            android:gravity="center"
+            android:textSize="55dp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/order_list_header"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/listview_header_bg">
+
+            <TextView
+                android:id="@+id/order_id_heading"
+                android:padding="5dp"
+                android:layout_weight="0.11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Order Id"
+                android:textSize="19dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/fabric_number_heading"
+                android:padding="5dp"
+                android:layout_weight="0.11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Fabric"
+                android:textSize="19dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/customer_name_heading"
+                android:layout_weight="0.11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Customer Name"
+                android:padding="5dp"
+                android:textSize="19dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/item_type_heading"
+                android:layout_weight="0.11"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Item Type"
+                android:textSize="19dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/placed_date_heading"
+                android:layout_weight="0.11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Date"
+                android:padding="5dp"
+                android:textSize="19dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/delivery_date_heading"
+                android:layout_weight="0.11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Delivery Date"
+                android:padding="5dp"
+                android:textSize="19dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/price_heading"
+                android:layout_weight="0.11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Price"
+                android:padding="5dp"
+                android:textSize="19dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/status_heading"
+                android:layout_weight="0.11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Status"
+                android:padding="5dp"
+                android:textSize="19dp"
+                android:textColor="#000"/>
+
+            <RelativeLayout
+                android:layout_weight="0.11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/order_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:layout_below="@id/order_list_header"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="3dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

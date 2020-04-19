@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/order_id_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="@color/field_name"
+        android:text="ID:"/>
+
+    <TextView
+        android:id="@+id/order_id_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/field_name"
+        android:layout_toRightOf="@id/order_id_text"
+        android:text="001"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/order_id_text"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:background="@color/btn_light_color">
+
+        <RelativeLayout
+            android:layout_weight="0.14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/order_price_rs_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RS."
+                    android:textSize="15dp"
+                    android:textColor="@color/field_name"
+                    android:layout_alignBaseline="@+id/order_price_data"/>
+
+                <TextView
+                    android:id="@+id/order_price_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/order_price_rs_text"
+                    android:textSize="25dp"
+                    android:textColor="@color/field_name"
+                    android:text="25000"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRICE"
+                android:textColor="@color/side_btn_text_c"
+                android:layout_margin="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"/>
+            
+            <View
+                android:layout_width="2dp"
+                android:layout_height="105dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/side_btn_text_u"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="0.14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/placed_on_date_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="25dp"
+                android:textColor="@color/field_name"
+                android:text="12 08 2017"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PLACED ON"
+                android:layout_margin="10dp"
+                android:textColor="@color/side_btn_text_c"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"/>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="105dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/side_btn_text_u"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="0.14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/delivered_on_date_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="25dp"
+                android:textColor="@color/field_name"
+                android:text="12 08 2017"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DELIVERED ON"
+                android:textColor="@color/side_btn_text_c"
+                android:layout_margin="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"/>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="105dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/side_btn_text_u"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="0.14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/item_type_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textAllCaps="true"
+                android:textSize="25dp"
+                android:textColor="@color/field_name"
+                android:text="3 PIECE SUIT"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ITEM TYPE"
+                android:textColor="@color/side_btn_text_c"
+                android:layout_margin="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"/>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="105dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/side_btn_text_u"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="0.14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/order_type_list_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textAllCaps="true"
+                android:textSize="25dp"
+                android:textColor="@color/field_name"
+                android:text="BESPOKE"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ORDER TYPE"
+                android:textColor="@color/side_btn_text_c"
+                android:layout_margin="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"/>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="105dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/side_btn_text_u"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="0.14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/status_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:maxWidth="200dp"
+                android:textSize="25dp"
+                android:textAllCaps="true"
+                android:textColor="@color/field_name"
+                android:text="PENDING REVIEW"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STATUS"
+                android:textColor="@color/side_btn_text_c"
+                android:layout_margin="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"/>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="105dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/side_btn_text_u"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="0.14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <Button
+                    android:id="@+id/as_new_order_btn"
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:text="AS NEW ORDER"
+                    android:textSize="15dp"
+                    android:textColor="@color/btn_dark_text"
+                    android:background="@drawable/login_btn_bg"/>
+
+                <Button
+                    android:id="@+id/alter_order_btn"
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:text="ALTER ORDER"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/as_new_order_btn"
+                    android:textColor="@color/btn_dark_text"
+                    android:background="@drawable/login_btn_bg"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

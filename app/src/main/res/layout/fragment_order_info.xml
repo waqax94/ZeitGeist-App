@@ -1,0 +1,181 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zeitgeist.employee.Fragments.OrderInfoFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/order_id_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order ID: "
+                android:textSize="30dp"
+                android:layout_margin="20dp"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/order_id_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35dp"
+                android:layout_margin="20dp"
+                android:layout_alignBaseline="@id/order_id_label"
+                android:layout_toRightOf="@id/order_id_label"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/order_type_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Type: "
+                android:textSize="30dp"
+                android:layout_margin="20dp"
+                android:layout_below="@id/order_id_label"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/order_type_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35dp"
+                android:layout_margin="20dp"
+                android:layout_alignBaseline="@id/order_type_label"
+                android:layout_toRightOf="@id/order_type_label"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/basepattern_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35dp"
+                android:layout_margin="20dp"
+                android:layout_alignBaseline="@id/order_type_label"
+                android:layout_toRightOf="@id/order_type_value"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/basesize_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35dp"
+                android:layout_margin="20dp"
+                android:layout_alignBaseline="@id/order_type_label"
+                android:layout_toRightOf="@id/basepattern_value"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/order_date_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Placed Date: "
+                android:textSize="30dp"
+                android:layout_margin="20dp"
+                android:layout_below="@id/order_type_label"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/order_date_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35dp"
+                android:layout_margin="20dp"
+                android:layout_alignBaseline="@id/order_date_label"
+                android:layout_toRightOf="@id/order_date_label"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/delivery_date_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Date: "
+                android:textSize="30dp"
+                android:layout_margin="20dp"
+                android:layout_below="@id/order_date_label"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/delivery_date_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35dp"
+                android:layout_margin="20dp"
+                android:layout_alignBaseline="@id/delivery_date_label"
+                android:layout_toRightOf="@id/delivery_date_label"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/item_type_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item Type: "
+                android:textSize="30dp"
+                android:layout_margin="20dp"
+                android:layout_below="@id/delivery_date_label"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/item_type_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textSize="35dp"
+                android:layout_margin="20dp"
+                android:layout_alignBaseline="@id/item_type_label"
+                android:layout_toRightOf="@id/item_type_label"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/order_status_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status: "
+                android:textSize="30dp"
+                android:layout_margin="20dp"
+                android:layout_below="@id/item_type_label"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/order_status_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35dp"
+                android:layout_margin="20dp"
+                android:layout_alignBaseline="@id/order_status_label"
+                android:layout_toRightOf="@id/order_status_label"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/order_price_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price: "
+                android:textSize="30dp"
+                android:layout_margin="20dp"
+                android:layout_below="@id/order_status_label"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/order_price_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35dp"
+                android:layout_margin="20dp"
+                android:layout_alignBaseline="@id/order_price_label"
+                android:layout_toRightOf="@id/order_price_label"
+                android:textColor="@color/field_name"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

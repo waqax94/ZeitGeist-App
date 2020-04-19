@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zeitgeist.employee">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera2" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".Models.ZeitGeist"
+        android:allowBackup="true"
+        android:icon="@mipmap/zg_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name=".Models.GenericFileProvider"
+            android:authorities="${applicationId}.my.package.name.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".Activities.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.WelcomeActivity"
+            android:label="@string/title_activity_welcome"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.NewOrderActivity"
+            android:label="@string/title_activity_new_order"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.SearchCustomerActivity"
+            android:label="@string/title_activity_search_customer"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.OrderTakingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_order_taking"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.ViewImageActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.OrderTypeActivity"
+            android:label="@string/title_activity_order_type"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.OrderListActivity"
+            android:label="@string/title_activity_order_list"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.OrderSuitTypeActivity"
+            android:label="@string/title_activity_order_suit_type"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.PlaceOrderActivity"
+            android:label="@string/title_activity_place_order"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.OrderManagementActivity"
+            android:label="@string/title_activity_order_management"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.SearchOrderActivity"
+            android:label="@string/title_activity_search_order"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.SearchResultActivity"
+            android:label="@string/title_activity_search_result"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.OrderDisplayActivity"
+            android:label="@string/title_activity_order_display"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.FeedbackActivity"
+            android:label="@string/title_activity_feedback"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.OrderTakingTwoPiece"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_order_taking_two_piece"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.OrderTakingJacket"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_order_taking_jacket"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.OrderTakingPant"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_order_taking_pant"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.OrderTakingWaistCoat"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_order_taking_waist_coat"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.OrderTakingShirt"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_order_taking_shirt"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.CameraActivity"
+            android:label="@string/title_activity_camera"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.InformationActivity"
+            android:label="@string/title_activity_information"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,142 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zeitgeist.employee.Fragments.CustomerInfoFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/customer_id_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer ID: "
+                android:textSize="30dp"
+                android:layout_margin="20dp"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/customer_id_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35dp"
+                android:layout_margin="20dp"
+                android:layout_alignBaseline="@id/customer_id_label"
+                android:layout_toRightOf="@id/customer_id_label"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/customer_name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Name: "
+                android:textSize="30dp"
+                android:layout_margin="20dp"
+                android:layout_below="@id/customer_id_label"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/customer_name_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35dp"
+                android:textAllCaps="true"
+                android:layout_margin="20dp"
+                android:layout_alignBaseline="@id/customer_name_label"
+                android:layout_toRightOf="@id/customer_name_label"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/customer_phone_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone: "
+                android:textSize="30dp"
+                android:layout_margin="20dp"
+                android:layout_below="@id/customer_name_label"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/customer_phone_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35dp"
+                android:layout_margin="20dp"
+                android:layout_alignBaseline="@id/customer_phone_label"
+                android:layout_toRightOf="@id/customer_phone_label"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/customer_email_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textSize="30dp"
+                android:layout_margin="20dp"
+                android:layout_below="@id/customer_phone_label"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/customer_email_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35dp"
+                android:layout_margin="20dp"
+                android:layout_alignBaseline="@id/customer_email_label"
+                android:layout_toRightOf="@id/customer_email_label"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/customer_city_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City: "
+                android:textSize="30dp"
+                android:layout_margin="20dp"
+                android:layout_below="@id/customer_email_label"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/customer_city_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35dp"
+                android:layout_margin="20dp"
+                android:layout_alignBaseline="@id/customer_city_label"
+                android:layout_toRightOf="@id/customer_city_label"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/customer_address_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address: "
+                android:textSize="30dp"
+                android:layout_margin="20dp"
+                android:layout_below="@id/customer_city_label"
+                android:textColor="@color/field_name"/>
+
+            <TextView
+                android:id="@+id/customer_address_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35dp"
+                android:layout_margin="20dp"
+                android:layout_alignBaseline="@id/customer_address_label"
+                android:layout_toRightOf="@id/customer_address_label"
+                android:textColor="@color/field_name"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

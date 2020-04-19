@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_order_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.zeitgeist.employee.Activities.OrderListActivity"
+    tools:showIn="@layout/activity_order_list">
+
+    <RelativeLayout
+        android:id="@+id/no_customer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:textColor="@color/field_name"
+            android:text="No Customer Found !"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/customer_order_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/customer_details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/customer_detail_bg">
+
+            <TextView
+                android:id="@+id/customer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="50dp"
+                android:textAllCaps="true"/>
+
+            <TextView
+                android:id="@+id/customer_id_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID:"
+                android:textSize="25dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/customer_name"/>
+
+            <TextView
+                android:id="@+id/customer_id_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="25dp"
+                android:text=""
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/customer_id_text"
+                android:layout_below="@id/customer_name"/>
+
+
+            <TextView
+                android:id="@+id/customer_phone_num_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/customer_id_text"
+                android:layout_alignBaseline="@id/customer_id_data"
+                android:layout_marginLeft="230dp"
+                android:textSize="25dp"
+                android:text=""/>
+
+
+            <TextView
+                android:id="@+id/customer_email_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/customer_phone_num_data"
+                android:layout_alignBaseline="@id/customer_id_data"
+                android:textSize="25dp"
+                android:layout_marginLeft="180dp"
+                android:text=""/>
+
+
+            <Button
+                android:id="@+id/new_customer_order_btn"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="50dp"
+                android:textSize="20dp"
+                android:text="NEW ORDER"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/btn_dark_text"
+                android:background="@drawable/login_btn_bg"/>
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/customer_order_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/customer_details_layout"
+            android:padding="20dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"
+            android:background="@android:color/transparent">
+        </ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

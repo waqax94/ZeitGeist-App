@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_camera"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.zeitgeist.employee.Activities.CameraActivity"
+    tools:showIn="@layout/activity_camera">
+
+    <Button
+        android:id="@+id/take_photo"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:text="TAKE PHOTO"
+        android:textSize="25dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/btn_light_text"
+        android:background="@drawable/light_btn_bg"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/photos_container_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/photos_container"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:paddingRight="40dp"
+            android:layout_centerHorizontal="true">
+
+
+            <RelativeLayout
+                android:id="@+id/photo_one_layout"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_width="115dp"
+                android:layout_height="115dp">
+
+                <ImageView
+                    android:id="@+id/photo_one"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:visibility="invisible"/>
+
+                <ImageButton
+                    android:id="@+id/add_photo_one"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/btn_dark_text"
+                    android:src="@drawable/ic_add_black_photo_36dp" />
+
+
+                <ImageButton
+                    android:id="@+id/remove_photo_one"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/cancel"
+                    android:background="@android:color/transparent"
+                    android:visibility="invisible"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/photo_two_layout"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center"
+                android:layout_width="115dp"
+                android:layout_height="115dp">
+
+                <ImageView
+                    android:id="@+id/photo_two"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:visibility="invisible"/>
+
+                <ImageButton
+                    android:id="@+id/add_photo_two"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/btn_dark_text"
+                    android:src="@drawable/ic_add_black_photo_36dp"/>
+
+                <ImageButton
+                    android:id="@+id/remove_photo_two"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/cancel"
+                    android:background="@android:color/transparent"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/photo_three_layout"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center"
+                android:layout_width="115dp"
+                android:layout_height="115dp">
+
+                <ImageView
+                    android:id="@+id/photo_three"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:visibility="invisible"/>
+
+                <ImageButton
+                    android:id="@+id/add_photo_three"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/btn_dark_text"
+                    android:src="@drawable/ic_add_black_photo_36dp"/>
+
+                <ImageButton
+                    android:id="@+id/remove_photo_three"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/cancel"
+                    android:background="@android:color/transparent"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/photo_four_layout"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center"
+                android:layout_width="115dp"
+                android:layout_height="115dp">
+
+                <ImageView
+                    android:id="@+id/photo_four"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:visibility="invisible"/>
+
+                <ImageButton
+                    android:id="@+id/add_photo_four"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/btn_dark_text"
+                    android:src="@drawable/ic_add_black_photo_36dp"/>
+
+                <ImageButton
+                    android:id="@+id/remove_photo_four"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/cancel"
+                    android:background="@android:color/transparent"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/photo_five_layout"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center"
+                android:layout_width="115dp"
+                android:layout_height="115dp">
+
+                <ImageView
+                    android:id="@+id/photo_five"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:visibility="invisible"/>
+
+                <ImageButton
+                    android:id="@+id/add_photo_five"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/btn_dark_text"
+                    android:src="@drawable/ic_add_black_photo_36dp"/>
+
+                <ImageButton
+                    android:id="@+id/remove_photo_five"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/cancel"
+                    android:background="@android:color/transparent"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/photo_six_layout"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center"
+                android:layout_width="115dp"
+                android:layout_height="115dp">
+
+                <ImageView
+                    android:id="@+id/photo_six"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:visibility="invisible"/>
+
+                <ImageButton
+                    android:id="@+id/add_photo_six"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/btn_dark_text"
+                    android:src="@drawable/ic_add_black_photo_36dp"/>
+
+                <ImageButton
+                    android:id="@+id/remove_photo_six"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/cancel"
+                    android:background="@android:color/transparent"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/photo_seven_layout"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center"
+                android:layout_width="115dp"
+                android:layout_height="115dp">
+
+                <ImageView
+                    android:id="@+id/photo_seven"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:visibility="invisible"/>
+
+                <ImageButton
+                    android:id="@+id/add_photo_seven"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/btn_dark_text"
+                    android:src="@drawable/ic_add_black_photo_36dp"/>
+
+                <ImageButton
+                    android:id="@+id/remove_photo_seven"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/cancel"
+                    android:background="@android:color/transparent"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/photos_container1"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/photos_container"
+            android:layout_height="180dp"
+            android:paddingRight="40dp"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:id="@+id/photo_eight_layout"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center"
+                android:layout_width="115dp"
+                android:layout_height="115dp">
+
+                <ImageView
+                    android:id="@+id/photo_eight"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:visibility="invisible"/>
+
+                <ImageButton
+                    android:id="@+id/add_photo_eight"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/btn_dark_text"
+                    android:src="@drawable/ic_add_black_photo_36dp"/>
+
+                <ImageButton
+                    android:id="@+id/remove_photo_eight"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/cancel"
+                    android:background="@android:color/transparent"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/photo_nine_layout"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center"
+                android:layout_width="115dp"
+                android:layout_height="115dp">
+
+                <ImageView
+                    android:id="@+id/photo_nine"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:visibility="invisible"/>
+
+                <ImageButton
+                    android:id="@+id/add_photo_nine"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/btn_dark_text"
+                    android:src="@drawable/ic_add_black_photo_36dp"/>
+
+                <ImageButton
+                    android:id="@+id/remove_photo_nine"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/cancel"
+                    android:background="@android:color/transparent"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/photo_ten_layout"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center"
+                android:layout_width="115dp"
+                android:layout_height="115dp">
+
+                <ImageView
+                    android:id="@+id/photo_ten"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:visibility="invisible"/>
+
+                <ImageButton
+                    android:id="@+id/add_photo_ten"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/btn_dark_text"
+                    android:src="@drawable/ic_add_black_photo_36dp"/>
+
+                <ImageButton
+                    android:id="@+id/remove_photo_ten"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/cancel"
+                    android:background="@android:color/transparent"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

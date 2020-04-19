@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/field_bg">
+
+
+    <TextView
+        android:id="@+id/order_id"
+        android:padding="5dp"
+        android:layout_weight="0.11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Bespoke20171006145513764_1"
+        android:textSize="18dp"
+        android:textColor="@color/field_name"/>
+
+    <TextView
+        android:id="@+id/fabric_number_data"
+        android:padding="5dp"
+        android:layout_weight="0.11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="abcd123"
+        android:textSize="18dp"
+        android:textColor="@color/field_name"/>
+
+    <TextView
+        android:id="@+id/customer_name_data"
+        android:layout_weight="0.11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Waqas Waheed"
+        android:padding="5dp"
+        android:textSize="18dp"
+        android:textColor="@color/field_name"/>
+
+    <TextView
+        android:id="@+id/item_type"
+        android:layout_weight="0.11"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="3 piece suit"
+        android:textSize="18dp"
+        android:textColor="@color/field_name"/>
+
+    <TextView
+        android:id="@+id/placed_date"
+        android:layout_weight="0.11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="21-11-2017"
+        android:padding="5dp"
+        android:textSize="18dp"
+        android:textColor="@color/field_name"/>
+
+    <TextView
+        android:id="@+id/delivery_date"
+        android:layout_weight="0.11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="21-11-2017"
+        android:padding="5dp"
+        android:textSize="18dp"
+        android:textColor="@color/field_name"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_weight="0.11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="68000"
+        android:padding="5dp"
+        android:textSize="18dp"
+        android:textColor="@color/field_name"/>
+
+    <RelativeLayout
+        android:layout_weight="0.11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="Pending Review"
+            android:textSize="17dp"
+            android:textColor="@color/btn_dark_color"
+            android:background="@drawable/status_tag_bg"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="0.11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/sell_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="SELL"
+            android:textSize="17dp"
+            android:background="@drawable/login_btn_bg"
+            android:textColor="@color/btn_dark_text"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

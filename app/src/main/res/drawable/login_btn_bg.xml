@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="5dp"></corners>
+            <solid android:color="@color/btn_dark_click"></solid>
+            <stroke android:color="@color/btn_dark_click"></stroke>
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape>
+            <corners android:radius="5dp"></corners>
+            <solid android:color="@color/btn_dark_click"></solid>
+            <stroke android:color="@color/btn_dark_click"></stroke>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="5dp"></corners>
+            <solid android:color="@color/btn_dark_color"></solid>
+            <stroke android:color="@color/btn_dark_color"></stroke>
+        </shape>
+    </item>
+
+</selector>
